@@ -1,7 +1,6 @@
 FROM circleci/android:api-29-node
 
 # Install the dependencies
-USER root
 RUN sudo apt-get update
 RUN sudo apt-get install openssl
 RUN sudo apt-get install curl
