@@ -9,3 +9,4 @@ RUN sudo apt-get install wget
 
 # Copy the deploy.sh
 COPY deploy.sh .
+RUN chmod +x deploy.sh
