@@ -7,7 +7,7 @@ jobs:
             - checkout
             - run:
                 name: Login
-                command: yes $DOCKER_PASSWORD | docker login --username=$DOCKER_USERNAME --email=$DOCKER_EMAIL
+                command: docker login --username=$DOCKER_USERNAME --password=$DOCKER_PASSWORD
             - run:
                 name: Build image
                 command: docker build . -t olivejp/android-deploy:1.0.4
