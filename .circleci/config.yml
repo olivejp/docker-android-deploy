@@ -29,10 +29,10 @@ jobs:
                 command: docker login -u ${DOCKER_USERNAME} -p ${DOCKER_HUB_PASSWORD}
             - run:
                 name: Build image
-                command: docker build . -t olivejp/android-deploy:1.0.5
+                command: docker build . -t olivejp/android-deploy:1.0.6
             - run:
                 name: Push the image
-                command: docker push olivejp/android-deploy:1.0.5
+                command: docker push olivejp/android-deploy:1.0.6
 workflows:
     version: 2
     build_image:

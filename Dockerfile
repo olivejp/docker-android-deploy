@@ -9,5 +9,5 @@ RUN sudo apt-get install wget
 
 
 # Copy the deploy.sh
-COPY deploy.sh .
+COPY deploy.sh /home/circleci/
 RUN sudo chmod +x deploy.sh
