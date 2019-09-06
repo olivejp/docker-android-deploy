@@ -25,7 +25,7 @@ jobs:
                   set +o pipefail
                   docker load -i /caches/app.tar | true
             - run:
-                name: Login
+                name: Sign in to Docker
                 command: docker login -u ${DOCKER_USERNAME} -p ${DOCKER_HUB_PASSWORD}
             - run:
                 name: Build image
