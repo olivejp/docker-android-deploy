@@ -30,7 +30,7 @@ jobs:
             - run:
                 name: Build image
                 command: docker build . -t olivejp/android-deploy:1.0.4
-             - run:
+            - run:
                 name: Push the image
                 command: docker push olivejp/android-deploy:1.0.4
 workflows:
