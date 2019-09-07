@@ -63,7 +63,7 @@ if [ -z "$AUTH_TOKEN" ] || [ -z "$AUTH_ISS" ] || [ -z "$AUTH_AUD" ]; then
   exit 1
 fi
 
-if [ $DRAFT == true ]; then
+if [ $DRAFT = true ]; then
   STATUS="draft"
 else
   STATUS="completed"
@@ -144,7 +144,6 @@ HTTP_STATUS_CREATE_EDIT=$(echo $HTTP_RESPONSE_CREATE_EDIT | tr -d '\n' | sed -e 
 
 if [ $HTTP_STATUS_CREATE_EDIT != 200 ]; then
   echo -e "Create edit failed.\nStatus: $HTTP_STATUS_CREATE_EDIT\nBody: $HTTP_BODY_CREATE_EDIT\nExiting."
-  
   exit 1
 fi
 
