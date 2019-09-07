@@ -58,6 +58,7 @@ echo 'AUTH_TOKEN = ' $AUTH_TOKEN
 echo 'AUTH_ISS = ' $AUTH_ISS
 echo 'AUTH_AUD = ' $AUTH_AUD
 
+
 if [ -z "$AUTH_TOKEN" ] || [ -z "$AUTH_ISS" ] || [ -z "$AUTH_AUD" ]; then
   echo "PLAYSTORE_SERVICE_KEY not as expected. Exiting."
   exit 1
