@@ -64,7 +64,7 @@ if [ -z "$AUTH_TOKEN" ] || [ -z "$AUTH_ISS" ] || [ -z "$AUTH_AUD" ]; then
   exit 1
 fi
 
-if [ $DRAFT ]; then
+if [ $DRAFT == true ]; then
   STATUS="draft"
 else
   STATUS="completed"
