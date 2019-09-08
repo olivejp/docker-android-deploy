@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Name variables
-PLAYSTORE_KEY="$1"
+PLAYSTORE_KEY=$1
 APK_PATH=$2
 BUILD_NO=$3
 PLAYSTORE_TRACK=$4
